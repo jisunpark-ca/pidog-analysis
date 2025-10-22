@@ -1,4 +1,4 @@
-# PIDOG System: Python Programming & Low-Level Control
+# PIDOG System: Python Programming & Control
 
 This repository serves as a personal learning resource detailing the in-depth analysis and documentation of the PIDOG system from a programming and system control perspective. The goal is to simultaneously acquire Python-based low-level control techniques and an understanding of Operating System principles using the PIDOG system.
 
