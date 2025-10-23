@@ -6,13 +6,13 @@ This repository serves as a personal learning resource detailing the in-depth an
 
 ## Topics & Structure
 
-| Folder/Document | Topic | Details (Learning Objectives) | Source Reference |
+| Folder/Document | Topic | Details (Learning Objectives) |
 | :--- | :--- | :--- | :--- |
-| `01_System_Setup/` | **OS & Initial Environment** | Install Raspberry Pi OS, verify **I2C & SPI interfaces**, install all Python modules, Servo calibration, and system initialization analysis. | 1. Quick Guide on Python, 2. Calibrate the PiDog |
-| `02_Low_Level_Control/` | **Basic Movement & Actuator Control** | PiDog initialization, control of **leg/head/tail movement**, stop all actions, execute preset actions (Python for low-level control). | 4. Easy Coding (Initialization, Leg/Head/Tail Move, etc.) |
-| `03_Sensor_Input/` | **Sensor Data Reading & Processing** | Read **Distance sensor** values, analyze **IMU data** (gyro/accel), detect sound direction, handle head pat events. | 4. Easy Coding (Read Distance, IMU Read, Sound Direction Detect, etc.) |
-| `04_Advanced_Behaviors/` | **Integrated Projects & Advanced Features** | Analyze complex sensing and control logic for **Patrol**, **Face Track**, **Ball Track**, and Balance. | 3. Fun Python Projects |
-| `05_OS_Automation/` | **OS Automation & Interaction** | Configure **Autostart PiDog on Boot**, control via keyboard and app (Input/Output and OS background processes). | Play with PiDog with Keyboard/APP, Autostart PiDog on Boot |
+| `01_System_Setup/` | **OS & Initial Environment** | Install Raspberry Pi OS, verify **I2C & SPI interfaces**, install all Python modules, Servo calibration, and system initialization analysis. |
+| `02_Low_Level_Control/` | **Basic Movement & Actuator Control** | PiDog initialization, control of **leg/head/tail movement**, stop all actions, execute preset actions (Python for low-level control). |
+| `03_Sensor_Input/` | **Sensor Data Reading & Processing** | Read **Distance sensor** values, analyze **IMU data** (gyro/accel), detect sound direction, handle head pat events. |
+| `04_Advanced_Behaviors/` | **Integrated Projects & Advanced Features** | Analyze complex sensing and control logic for **Patrol**, **Face Track**, **Ball Track**, and Balance. |
+| `05_OS_Automation/` | **OS Automation & Interaction** | Configure **Autostart PiDog on Boot**, control via keyboard and app (Input/Output and OS background processes). |
 
 ## Technologies Used
 
