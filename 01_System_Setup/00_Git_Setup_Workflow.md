@@ -23,8 +23,8 @@ This guide covers the basic commands for initializing a Git repository and maint
 3.  **Create Remote Repo (GitHub) & Connect:**
     ```bash
     # (Create repository on GitHub website first)
-    git remote add origin [https://github.com/your-username/new-project.git](https://github.com/your-username/new-project.git)
-    git push --set-upstream pidog-learning master
+    git remote add origin https://github.com/your-username/new-project.git
+    git push --set-upstream pidog-learning main
     ```
 
 ### B. Cloning an Existing Project
@@ -32,7 +32,7 @@ This guide covers the basic commands for initializing a Git repository and maint
 This single command handles folder creation, Git initialization, and setting up the `origin` remote.
 
 ```bash
-git clone [https://github.com/jisunpark-ca/pidog-learning.git](https://github.com/jisunpark-ca/pidog-learning.git)
+git clone https://github.com/jisunpark-ca/pidog-learning.git
 cd pidog-learning
 # Start work.
 ```
@@ -47,11 +47,11 @@ If your local folder is already a Git repository but lost its remote connection:
     ```
 2.  **Add remote connection (use 'origin' as the standard name):**
     ```bash
-    git remote add origin [https://github.com/jisunpark-ca/pidog-learning.git](https://github.com/jisunpark-ca/pidog-learning.git)
+    git remote add origin https://github.com/jisunpark-ca/pidog-learning.git
     ```
     *(Optional)* **Set Tracking Branch (if needed):**
     ```bash
-    git push --set-upstream pidog-learning master
+    git push --set-upstream pidog-learning main
     ```
 ---
 
@@ -99,9 +99,9 @@ Remove-Item .\pidog-learning -Recurse -Force
 
 ## 🚨 Common Push Error & Fix
 
-If you see the error: `fatal: The current branch master has no upstream branch.`, use the following command to set the tracking relationship permanently:
+If you see the error: `fatal: The current branch main has no upstream branch.`, use the following command to set the tracking relationship permanently:
 
 ```bash
-git push --set-upstream pidog-learning master
+git push --set-upstream pidog-learning main
 ```
 ---

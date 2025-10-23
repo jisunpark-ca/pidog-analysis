@@ -2,7 +2,7 @@
 
 This guide documents the necessary steps to remotely access the Raspberry Pi (RPi) and prepare the environment for cloning the PIDOG project.
 
-## 1. Network & SSH Access Mastery
+## 1. Network & SSH Access
 
 ### Prerequisites
 * **OS Installation:** OS successfully installed onto the Micro SD Card using **Raspberry Pi Imager**.
@@ -24,11 +24,11 @@ Before proceeding, critical hardware interfaces required for the PIDOG servos an
 
 ### Procedure: SSH Connection
 
-1.  **Establish SSH Connection:** Use the standard SSH command to connect remotely.
-    ```bash
-    ssh jisunpark@raspberrypi.local 
-    ```
-    * **Secure shell (SSH)** is a program that provides encrypted connections to a remote computer system.
+**Establish SSH Connection:** Use the standard SSH command to connect remotely.
+```bash
+ssh UserID@raspberrypi.local 
+```
+> **Secure shell (SSH)** is a program that provides encrypted connections to a remote computer system.
 
 ---
 
@@ -55,24 +55,12 @@ Once SSH access is secured, the final step is to clone the project repository on
 
 ### Action B: Code Synchronization (Execution Readiness)
 
-1. Local PC Synchronization (Origin Management)
+RPi Synchronization (Fetching Latest Code)
 
-    These commands are run on your **Local PC** to manage the connection to your GitHub repository (**Origin**) and verify your working status before pushing changes.
+The RPi acts as the **execution environment** (the place where the hardware runs). It must pull the latest code from your central authority (GitHub) before running the program.
 
-    | Command | Logical Purpose | Execution Location |
-    | :--- | :--- | :--- |
-    | `git remote -v` | **Verify Remote Connection.** Confirms that **`origin`** correctly points to **your private GitHub repository**. Crucial for checking if any `upstream` connection was unintentionally retained. | Local PC (PIDOG folder) |
-    | `git branch -a` | **View All Branches.** Ensures you are operating on the correct branch (e.g., **`master`** / **`main`**) before making changes. | Local PC (PIDOG folder) |
-    | **`git add .`** | **1. Stage Changes.** Moves all modified and new files to the staging area, preparing them for the final commit. | Local PC (PIDOG folder) |
-    | `git commit -m "Feat: Implemented new walking gait"` | **2. Commit Changes.** Finalizes your code modifications and records them permanently in the local repository history. | Local PC (PIDOG folder) |
-    | `git push origin master` | **3. Push to GitHub (Origin).** Uploads your committed changes to your centralized GitHub repository. **(Establishes Single Source of Truth)** | Local PC (PIDOG folder) |
-
-
-2. RPi Synchronization (Fetching Latest Code)
-
-    The RPi acts as the **execution environment** (the place where the hardware runs). It must pull the latest code from your central authority (GitHub) before running the program.
-
-    | Command | Logical Purpose | Execution Location |
-    | :--- | :--- | :--- |
-    | `git pull origin master` | **Update Code.** Pulls the latest commits from your GitHub repository (**`origin`**)'s     **`master`** branch and merges them into the RPi's local repository. This ensures the RPi always runs the most current,     committed version of your code. | RPi (PIDOG folder, via SSH) |
+| Command | Logical Purpose | Execution Location |
+| :--- | :--- | :--- |
+| `git pull origin main` | **Update Code.** Pulls the latest commits from your GitHub repository (**`origin`**)'s     **`main`** branch and merges them into the RPi's local repository. This ensures the RPi always runs the most current,     committed version of your code. | RPi (PIDOG folder, via SSH) |
+    
 ---
