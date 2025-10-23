@@ -61,6 +61,6 @@ The RPi acts as the **execution environment** (the place where the hardware runs
 
 | Command | Logical Purpose | Execution Location |
 | :--- | :--- | :--- |
-| `git pull origin master` | **Update Code.** Pulls the latest commits from your GitHub repository (**`origin`**)'s     **`main`** branch and merges them into the RPi's local repository. This ensures the RPi always runs the most current,     committed version of your code. | RPi (PIDOG folder, via SSH) |
+| `git pull origin main` | **Update Code.** Pulls the latest commits from your GitHub repository (**`origin`**)'s     **`main`** branch and merges them into the RPi's local repository. This ensures the RPi always runs the most current,     committed version of your code. | RPi (PIDOG folder, via SSH) |
     
 ---
