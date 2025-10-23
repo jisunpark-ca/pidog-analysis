@@ -2,7 +2,7 @@
 
 This guide documents the necessary steps to remotely access the Raspberry Pi (RPi) and prepare the environment for cloning the PIDOG project.
 
-## 1. Network & SSH Access Mastery
+## 1. Network & SSH Access
 
 ### Prerequisites
 * **OS Installation:** OS successfully installed onto the Micro SD Card using **Raspberry Pi Imager**.
@@ -24,7 +24,7 @@ Before proceeding, critical hardware interfaces required for the PIDOG servos an
 
 ### Procedure: SSH Connection
 
-1.  **Establish SSH Connection:** Use the standard SSH command to connect remotely.
+**Establish SSH Connection:** Use the standard SSH command to connect remotely.
     ```bash
     ssh jisunpark@raspberrypi.local 
     ```
