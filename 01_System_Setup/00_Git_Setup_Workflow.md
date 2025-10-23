@@ -35,6 +35,7 @@ This single command handles folder creation, Git initialization, and setting up 
 git clone [https://github.com/jisunpark-ca/pidog-learning.git](https://github.com/jisunpark-ca/pidog-learning.git)
 cd pidog-learning
 # Start work.
+```
 
 ### C. Re-establishing Remote Connection
 
@@ -89,15 +90,12 @@ This often occurs when using `git clone` into an existing, same-named directory.
 ```bash
 # Power Shell (Windows):
 Move-Item .\pidog-learning\* .
-# Git Bash/CMD:
-mv pidog-learning/* .
-
+```
 #### Remove Empty Inner Folder:
 ```bash
 # Power Shell (Windows):
 Remove-Item .\pidog-learning -Recurse -Force
-# Git Bash/CMD:
-rmdir pidog-learning
+```
 
 ## 🚨 Common Push Error & Fix
 
@@ -105,5 +103,5 @@ If you see the error: `fatal: The current branch master has no upstream branch.`
 
 ```bash
 git push --set-upstream pidog-learning master
-'''
+```
 ---
