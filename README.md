@@ -1,6 +1,7 @@
 # PIDOG System: Python Programming & Control
 
 This repository serves as a personal learning resource detailing the in-depth analysis and documentation of the PIDOG system from a programming and system control perspective. The goal is to simultaneously acquire Python-based low-level control techniques and an understanding of Operating System principles using the PIDOG system.
+Reference: [SunFounder](https://docs.sunfounder.com/projects/pidog/en/latest/python/python_start/installing_the_os.html)
 
 ## Topics & Structure
 
