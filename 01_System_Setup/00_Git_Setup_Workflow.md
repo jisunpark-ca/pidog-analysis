@@ -99,9 +99,9 @@ Remove-Item .\pidog-learning -Recurse -Force
 
 ## 🚨 Common Push Error & Fix
 
-If you see the error: `fatal: The current branch master has no upstream branch.`, use the following command to set the tracking relationship permanently:
+If you see the error: `fatal: The current branch main has no upstream branch.`, use the following command to set the tracking relationship permanently:
 
 ```bash
-git push --set-upstream pidog-learning master
+git push --set-upstream pidog-learning main
 ```
 ---
