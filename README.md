@@ -7,7 +7,7 @@ This repository serves as a personal learning resource detailing the in-depth an
 ## Topics & Structure
 
 | Folder/Document | Topic | Details (Learning Objectives) |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- |
 | `01_System_Setup/` | **OS & Initial Environment** | Install Raspberry Pi OS, verify **I2C & SPI interfaces**, install all Python modules, Servo calibration, and system initialization analysis. |
 | `02_Low_Level_Control/` | **Basic Movement & Actuator Control** | PiDog initialization, control of **leg/head/tail movement**, stop all actions, execute preset actions (Python for low-level control). |
 | `03_Sensor_Input/` | **Sensor Data Reading & Processing** | Read **Distance sensor** values, analyze **IMU data** (gyro/accel), detect sound direction, handle head pat events. |
